@@ -33,6 +33,7 @@ disable=
     R0913,  # too-many-arguments
     W0212,  # protected-access
     C0301,  # line-too-long
+    C0303, 
     C0304,
 
 [REPORTS]
