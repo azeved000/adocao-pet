@@ -1,10 +1,10 @@
-from sqlalchemy import Column, String, BIGINT
+from sqlalchemy import Column, String, Integer
 from ..settings.base import Base
 
 class PetsTable(Base):
     __tablename__ = "pets"
 
-    id = Column(BIGINT, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String, nullable=False)
     type = Column(String, nullable=False)
 
