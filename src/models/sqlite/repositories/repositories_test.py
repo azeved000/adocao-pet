@@ -1,13 +1,13 @@
 import pytest
 from ..settings.connection import db_connection_handler
 from ..settings.base import Base
-from ..entities.pets import PetsTable
-from ..entities.people import PeopleTable
+from ..entities.pets import PetsTable  # noqa: F401
+from ..entities.people import PeopleTable  # noqa: F401
 from .pets_repository import PetsRepository
 from .people_repository import PeopleRepository
 
-#db_connection_handler.connect_to_db()
-# Cria todas as tabelas no banco de dados
+# Inicializa a conexão para garantir que o engine exista antes da criação das tabelas
+# db_connection_handler.connect_to_db()
 Base.metadata.create_all(db_connection_handler.get_engine())
 
 @pytest.mark.skip(reason="Interação com o banco de dados")
