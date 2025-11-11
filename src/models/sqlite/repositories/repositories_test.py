@@ -7,7 +7,7 @@ from .pets_repository import PetsRepository
 from .people_repository import PeopleRepository
 
 # Inicializa a conexão para garantir que o engine exista antes da criação das tabelas
-# db_connection_handler.connect_to_db()
+db_connection_handler.connect_to_db()
 Base.metadata.create_all(db_connection_handler.get_engine())
 
 @pytest.mark.skip(reason="Interação com o banco de dados")
