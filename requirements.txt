@@ -1,13 +1,21 @@
+annotated-types==0.7.0
 astroid==4.0.1
+blinker==1.9.0
 cfgv==3.4.0
+click==8.1.7
 colorama==0.4.6
 dill==0.4.0
 distlib==0.4.0
 filelock==3.20.0
+Flask==3.1.0
+Flask-Cors==5.0.0
 greenlet==3.2.4
 identify==2.6.15
 iniconfig==2.3.0
 isort==7.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.5
+MarkupSafe==3.0.2
 mccabe==0.7.0
 mock-alchemy==0.2.6
 nodeenv==1.9.1
@@ -15,6 +23,8 @@ packaging==25.0
 platformdirs==4.5.0
 pluggy==1.6.0
 pre_commit==4.3.0
+pydantic==2.10.5
+pydantic_core==2.27.2
 Pygments==2.19.2
 pylint==4.0.2
 pytest==8.4.2
@@ -24,3 +34,4 @@ SQLAlchemy==2.0.44
 tomlkit==0.13.3
 typing_extensions==4.15.0
 virtualenv==20.35.4
+Werkzeug==3.1.3
